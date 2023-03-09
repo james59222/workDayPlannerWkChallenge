@@ -3,6 +3,7 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+//
 
 
 
@@ -11,11 +12,11 @@ var currentHour = today.hour();
 $('#currentDay').text(today.format('MMM D, YYYY HH:ss'));
   // TODO: Add a listener for click events on the save button. This code should use the id in the containing time-block as a key to save the user input in
     var timeDataEl = document.querySelector('.container');
-      $('.saveBtn').on('click', function () {
-      var idVal = $(this).siblings('.description').val();
-      var timeVal = $(this).parent().attr('id');
+      $('#saveBtn').on('click', function () {
+      var idEl = $(this).siblings('.description').val();
+      var timeEl = $(this).parent().attr('id');
   // local storage. HINT: What does `this` reference in the click listener function? How can DOM traversal be used to get the "hour-x" id of the
-      localStorage.setItem(timeVal, idVal);
+      localStorage.setItem(timeEl, idEl);
     });
   // 
   // time-block containing the button that was clicked? How might the id be
@@ -43,10 +44,10 @@ $('#currentDay').text(today.format('MMM D, YYYY HH:ss'));
     //retrieves items from local storage and sets them in proper places
     // block by comparing the id to the current hour.
     $('.time-block').each(function () {
-      var timeVal = parseInt($(this).attr('id').split("hour")[1]);
+      var timeEl = parseInt($(this).attr('id').split("hour")[1]);
 
     // if the time Id attribute is before the current hour, add the past class
-    if (timeVal < currentHour) {
+    if (timeEl < currentHour) {
       $(this).addClass('past');
     } // if the time Id attribute is equal to the current hour, remove the past and future classes and add the present class
     else if (timeVal === currentHour) {
