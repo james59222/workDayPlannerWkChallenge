@@ -1,7 +1,7 @@
 github live page: https://james59222.github.io/workDayPlannerWkChallenge/
 
 screenshot
-Capture.png
+Capture.PNG
 # 05 Third-Party APIs: Work Day Scheduler
 
 ## Your Task
