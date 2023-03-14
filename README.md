@@ -1,3 +1,6 @@
+Worked with tutor weekly and attended office hours. 
+Worked in Ethan breakout room where code was shared.
+
 github live page: https://james59222.github.io/workDayPlannerWkChallenge/
 
 https://user-images.githubusercontent.com/65635308/224022461-86de105a-2d7f-457a-9556-e5e3c69a20bd.png
